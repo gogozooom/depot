@@ -26,6 +26,7 @@
   <body>
     <section class="flex">
       <nav class="bg-blue-900 p-6">
+
         <ul class="text-gray-300 leading-8">
           <li><a href="/"><%= image_tag 'logo-green.svg', alt: 'The Pragmatic Bookshelf' %></a></li>
           <li><a href="/">Home</a></li>
@@ -33,6 +34,8 @@
           <li><a href="/news">News</a></li>
           <li><a href="/contact">Contact</a></li>
         </ul>
+
+        <%= render partial: 'layouts/cart', locals: { cart: @cart } %>
       </nav>
 
       <main class="container mx-auto mt-4 px-5 flex">
