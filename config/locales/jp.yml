@@ -1,0 +1,84 @@
+jp:
+
+  activerecord:
+    models:
+      order: "注文"
+    attributes:
+      order:
+        address: "住所"
+        name: "お名前"
+        email: "電子メール"
+        pay_type: "支払の方"
+    errors:
+      messages:
+        inclusion: "は選択ができません"
+        blank: "が空にできません"
+  errors:
+    template:
+      body: ""
+      header:
+        one: "この%{model}は問題が1つがあります"
+        other: "この%{model}は問題が%{count}つがあります"
+
+  thanks: "ご注文ありがとうございました"
+
+  number:
+    currency:
+      format:
+        unit: "$US"
+        precision: 2
+        separator: "."
+        delimiter: ","
+        format: "%n&nbsp;%u"
+
+  sessions:
+    new:
+      signin: "サインイン"
+      email_html: "電子メールをご入力ください"
+      password_html: "パスワードをご入力ください"
+      forgot_password: "パスワードを忘れですか？"
+
+  layouts:
+    application:
+      title: "カエルの店"
+      home: "主のページ"
+      questions: "質問のページ"
+      news: "ニュースのページ"
+      contact: "ご連絡のページ"
+      login: "ログイン"
+      logout: "ログアウト"
+
+  store:
+    index:
+      title_html: "あなたのプラグティックのカタログ"
+    product:
+      add_html: "カートに追加する"
+
+  carts:
+    cart:
+      title: "あなたのカート"
+      empty: "カートを空ける"
+      checkout: "チェックアウト"
+      
+  orders:
+    new:
+      legend: "詳細をご入力ください"
+    form:
+      name: "お名前"
+      address_html: "住所"
+      email: "電子メール"
+      pay_type: "支払の方"
+      pay_prompt_html: "支払の方が選んでください"
+      submit: "注文する"
+      pay_types:
+        "Check": "ビル"
+        "Credit card": "クレジットカード"
+        "Purchase order": "購入注文"
+    check:
+      routing_number: "ルーティング番号"
+      account_number: "口座番号"
+    cc:
+      cc_number: "口座番号"
+      expiration_date: "満期日"
+    po:
+      po_number: "購入注文番号"
