@@ -7,3 +7,4 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
+User.create! name: 'admin', email_address: 'admin@user.org', password: 'admin' # DON'T DO THIS FR! It's just that "EDITOR='code --wait' bin/rails credentials:edit" doesn't want to freaking work...
