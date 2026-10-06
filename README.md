@@ -1,24 +1,19 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A shopping application using the book: "Agile Web Development with Rails 8 by The Pragmatic Programmers"
 
-Things you may want to cover:
+# RUNNING DEV
 
-* Ruby version
+Use WSL if on windows.
+Run commands in root folder.
 
-* System dependencies
+Migrate the database with: `bin/rails db:migrate`
+Then run the server with: `bin/dev`
+The webpage can be accessed by navigating to http://localhost:3000/
 
-* Configuration
+If you experience an error related to root "/" not existing, try navigating to http://localhost:3000/en first, it need to cache something first or whatever it is. 
 
-* Database creation
+# INFO
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Ruby 3.4.8
+Rails 8.1.3.1
